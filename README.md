@@ -4,6 +4,11 @@ A back-end that stores personal income and expenses in a **PostgreSQL** database
 
 Built as the mini-project for **PFD200 Professional Development** (FdSc Computing) to close a skills gap in **relational database design, SQL and connecting a database to an application**.
 
+> ### 🔐 Before you start – 3 habits to keep your money data private
+> 1. **Your database password lives only in `.env`.** Never paste it into the code, a chat or GitHub.
+> 2. **Turn on two-factor authentication** for your Supabase and GitHub accounts.
+> 3. **Check before you share.** Screenshots and reports show real amounts – use test data or blur them first.
+
 ## Tech stack
 | Layer | Tool |
 |---|---|
@@ -70,7 +75,25 @@ Interactive documentation: `http://127.0.0.1:8000/docs`
 - The API has **no user authentication** (out of scope for this project) and is meant to run locally only.
 
 ## Screenshots
-_Add screenshots to the `docs` folder and link them here._
+**Interactive API documentation (`/docs`)**
+
+![API documentation](docs/api-docs.png)
+
+**Net balance trend – live data from Supabase**
+
+![Net trend](docs/net-trend.png)
+
+**Spending by category (October 2026)**
+
+![By category](docs/by-category.png)
+
+**Validation – a transaction with a non-existent category is rejected**
+
+![Invalid category](docs/post-invalid-category.png)
+
+**Security awareness card for users**
+
+<img src="docs/security-card.png" width="300" alt="3 habits to keep your money data private">
 
 ## Author
 Claudiu Hanu – FdSc Computing
